@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО "ВУДВИЖН" | Автоматизированная система обнаружения дефектов поверхности древесины</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tree" style="color: #1a7f37;"></i>
+                <span>ООО "ВУДВИЖН"</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Главная</a>
+                <a href="#architecture" class="nav-link">Архитектура</a>
+                <a href="#modules" class="nav-link">Модули</a>
+                <a href="#tech" class="nav-link">Технологии</a>
+                <a href="#demo" class="nav-link">Демонстрация</a>
+                <a href="#fond-support" class="nav-link">Поддержка проекта</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный герой-блок -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Автоматизированная система обнаружения дефектов поверхности древесины</h1>
+            <p class="hero-subtitle">Комплексное решение на базе компьютерного зрения и нейросетей для промышленного контроля дефектов и сортировки пиломатериалов</p>
+            <div class="hero-buttons">
+                <a href="#architecture" class="btn btn-primary">Архитектура системы</a>
+                <a href="#demo" class="btn btn-secondary">Демонстрация</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Трансформация контроля качества с помощью ИИ</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="feature-title">Высокая точность детекции</h3>
+                    <p class="feature-text">Модель YOLOv8 обеспечивает точность обнаружения дефектов >95% с поддержкой 10 классов дефектов</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">Полная автоматизация</h3>
+                    <p class="feature-text">От захвата изображения до определения сорта без участия оператора. Работа в реальном времени 24/7</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3 class="feature-title">Гибкие правила сортировки</h3>
+                    <p class="feature-text">Настраиваемые правила классификации в JSON-формате под конкретные производственные стандарты</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Архитектура -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <h2 class="section-title">Архитектура системы</h2>
+            <p class="section-subtitle">Трёхмодульная система с четким разделением ответственности</p>
+            
+            <div class="architecture-flow">
+                <div class="flow-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Модуль захвата</h3>
+                    <p class="step-text">Промышленная камера HIKROBOT с алгоритмом обнаружения движения</p>
+                </div>
+                <div class="flow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Модуль детекции</h3>
+                    <p class="step-text">YOLOv8 нейросеть для обнаружения и классификации 10 типов дефектов</p>
+                </div>
+                <div class="flow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Модуль сортировки</h3>
+                    <p class="step-text">Применение бизнес-правил, определение сорта и веб-интерфейс оператора</p>
+                </div>
+            </div>
+            
+            <div class="architecture-description">
+                <p><strong>Поток данных:</strong> Камера → Модуль 1 (захват изображения) → HTTP → Модуль 2 (детекция дефектов) → HTTP → Модуль 3 (сортировка) → Веб-интерфейс и база данных</p>
+                <p>Каждый модуль работает как независимый микросервис, что обеспечивает масштабируемость и отказоустойчивость системы.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модули -->
+    <section id="modules" class="modules">
+        <div class="container">
+            <h2 class="section-title">Модули системы</h2>
+            <p class="section-subtitle">Три специализированных компонента для полного цикла контроля качества</p>
+            
+            <div class="modules-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="module1">Модуль 1: Захват изображений</button>
+                    <button class="tab-btn" data-tab="module2">Модуль 2: Детекция YOLO</button>
+                    <button class="tab-btn" data-tab="module3">Модуль 3: Сортировка</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="module1">
+                        <div class="module-content">
+                            <div class="module-info">
+                                <h3 class="module-title">Автоматизированный захват изображений с промышленной линии</h3>
+                                <ul class="module-list">
+                                    <li><strong>Оборудование:</strong> Промышленная камера HIKROBOT с разрешением 5472×3648 пикселей</li>
+                                    <li><strong>Алгоритм:</strong> Обнаружение движения на основе OpenCV (фоновое вычитание, морфологические операции)</li>
+                                    <li><strong>Управление:</strong> SDK MvCameraControl, автонастройка экспозиции и усиления</li>
+                                    <li><strong>Интерфейс:</strong> Веб-панель управления с предпросмотром видеопотока</li>
+                                    <li><strong>Интеграция:</strong> Автоматическая отправка изображений на сервер детекции по HTTP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="module2">
+                        <div class="module-content">
+                            <div class="module-info">
+                                <h3 class="module-title">Обнаружение и классификация дефектов нейросетью YOLOv8</h3>
+                                <ul class="module-list">
+                                    <li><strong>Модель:</strong> YOLOv8m (medium) с дообучением на 10 000 размеченных изображений</li>
+                                    <li><strong>Точность:</strong> mAP@0.5 = 80.2%, Precision = 79.5%, Recall = 72.5%</li>
+                                    <li><strong>Классы дефектов:</strong> 10 типов (сучки, трещины, смола, гниль и др.)</li>
+                                    <li><strong>Обработка:</strong> Асинхронная очередь (ImageQueue), поддержка CPU/GPU</li>
+                                    <li><strong>API:</strong> REST эндпоинт для приема изображений и возврата JSON с результатами</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="module3">
+                        <div class="module-content">
+                            <div class="module-info">
+                                <h3 class="module-title">Классификация сортов и веб-визуализация для оператора</h3>
+                                <ul class="module-list">
+                                    <li><strong>Правила сортировки:</strong> Настраиваемые JSON-правила с учетом размеров и количества дефектов</li>
+                                    <li><strong>Алгоритм:</strong> Определение сорта от лучшего к худшему на основе пороговых значений</li>
+                                    <li><strong>База данных:</strong> SQLite для хранения истории с метаданными и изображениями</li>
+                                    <li><strong>Веб-интерфейс:</strong> Реальный мониторинг, просмотр результатов, управление правилами</li>
+                                    <li><strong>Экспорт:</strong> Полная история обработки с возможностью фильтрации и анализа</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Технологии -->
+    <section id="tech" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Технологический стек</h2>
+            <p class="section-subtitle">Современные технологии для промышленного применения</p>
+            
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="tech-name">Python</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <span class="tech-name">OpenCV</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span class="tech-name">YOLOv8</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-pytorch"></i>
+                    </div>
+                    <span class="tech-name">PyTorch</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <span class="tech-name">Flask</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="tech-name">SQLite</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <span class="tech-name">JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <span class="tech-name">HTTP/REST</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Демонстрация -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="section-title">Демонстрация интерфейсов</h2>
+            <p class="section-subtitle">Визуализация работы трех модулей системы</p>
+            
+            <div class="demo-grid">
+                <div class="demo-item">
+
+                    <div class="demo-image-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <span>Интерфейс модуля захвата</span>
+                    </div>
+
+                    <div class="demo-info">
+                        <h3 class="demo-title">Управление промышленной камерой</h3>
+                        <p class="demo-text">Веб-интерфейс для настройки параметров камеры, порогов детекции движения и просмотра видеопотока в реальном времени.</p>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <div class="demo-image-placeholder">
+                        <i class="fas fa-brain"></i>
+                        <span>Интерфейс YOLO детектора</span>
+                    </div>
+                    <div class="demo-info">
+                        <h3 class="demo-title">Загрузка моделей и настройка детекции</h3>
+                        <p class="demo-text">Панель управления для загрузки моделей YOLO, выбора классов дефектов и настройки параметров инференса.</p>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <div class="demo-image-placeholder">
+                        <i class="fas fa-sort-amount-down"></i>
+                        <span>Интерфейс системы сортировки</span>
+                    </div>
+                    <div class="demo-info">
+                        <h3 class="demo-title">Визуализация результатов и управление правилами</h3>
+                        <p class="demo-text">Главный интерфейс оператора с отображением обработанных изображений, bounding boxes, присвоенного сорта и историей обработки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-tree" style="color: #2EA043;"></i>
+                    <span>ООО "ВУДВИЖН"</span>
+                </div>
+                <div class="footer-info">
+                    <p>Автоматизированная система обнаружения дефектов поверхности древесины с использованием компьютерного зрения и нейросетевых технологий</p>
+                    <p class="footer-copyright">© 2026 ООО "ВУДВИЖН"</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Блок информации о поддержке фонда -->
+    <section id="fond-support" class="fond-support">
+        <div class="container">
+            <div class="fond-content">
+                <div class="fond-logo">
+                    <img src="images/fond.webp" alt="Фонд содействия инновациям" class="fond-image">
+                </div>
+                <div class="fond-info">
+                    <h3 class="fond-title">Поддержка проекта</h3>
+                    <p class="fond-text">
+                        Данный проект выполнен при поддержке гранта <strong>Фонда содействия инновациям</strong>, 
+                        предоставленного в рамках программы «Студенческий стартап» федерального проекта 
+                        «Платформа университетского технологического предпринимательства».
+                    </p>
+                    <p class="fond-text">
+                        Грант №4303ГССС15-L/101035 от 29 ноября 2024 года.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
